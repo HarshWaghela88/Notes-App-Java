@@ -1,7 +1,3 @@
-Here’s a simpler, natural-looking **README.md** for your Task 4:
-
----
-
 # Notes App – Java File I/O
 
 A simple text-based notes app made in Java. It lets you add and read notes using file handling.
