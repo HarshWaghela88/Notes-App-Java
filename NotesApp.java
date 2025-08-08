@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class NotesApp {
     private static final String FILE_NAME = "notes.txt";
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice;
@@ -16,7 +15,6 @@ public class NotesApp {
             System.out.print("Enter choice: ");
             choice = sc.nextInt();
             sc.nextLine(); // consume newline
-
             switch (choice) {
                 case 1 -> writeNote(sc);
                 case 2 -> viewNotes();
@@ -24,10 +22,9 @@ public class NotesApp {
                 default -> System.out.println("Invalid choice!");
             }
         } while (choice != 3);
-
         sc.close();
     }
-
+    
     private static void writeNote(Scanner sc) {
         System.out.print("Enter your note: ");
         String note = sc.nextLine();
